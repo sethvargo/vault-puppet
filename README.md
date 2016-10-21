@@ -101,6 +101,8 @@ Let's forget about configuration management for a bit and focus on the human com
 
 But Vault supports more than just database credentials. Let's take a look.
 
+![Vault Architecture](images/arch.jpg)
+
 ## Getting Started
 
 First we need to configure our local client to talk to the remote Vault server. I have already provisioned this server in advance using [Terraform](https://www.terraform.io/). We can do this by setting the `VAULT_ADDR` environment variable:
