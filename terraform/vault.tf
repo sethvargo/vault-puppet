@@ -26,7 +26,3 @@ resource "aws_instance" "vault" {
 
   user_data = "${data.template_file.vault.rendered}"
 }
-
-output "vault" {
-  value = "${aws_instance.vault.public_ip}"
-}

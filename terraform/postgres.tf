@@ -38,11 +38,3 @@ resource "aws_instance" "postgres" {
 
   user_data = "${data.template_file.postgres.rendered}"
 }
-
-output "connection_url" {
-  value = "postgresql://${random_id.vault_username.hex}:${random_id.vault_password.hex}@${aws_instance.postgres.private_ip}/myapp"
-}
-
-output "postgres" {
-  value = "${aws_instance.postgres.public_ip}"
-}
