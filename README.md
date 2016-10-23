@@ -311,4 +311,4 @@ Some of the benefits of this approach are:
 
 - Configuration management is not responsible for securing secrets
 - Nodes and applications acquire their own secrets without involving a human
-- Secrets are easily revoked in the event of a data breech
+- Secrets are easily revoked in the event of a data breach
